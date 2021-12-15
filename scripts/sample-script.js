@@ -24,7 +24,7 @@ async function main() {
   await todoList.addTask("Completar Udemy solidity");
   await todoList.addTask("Enviar mail a jsc");
 
-  const tasks = await todoList.getAllTasks();
+  const tasks = await todoList.getAllUserTasks();
 
   console.log(tasks.length);
   console.log(tasks[0].description);
